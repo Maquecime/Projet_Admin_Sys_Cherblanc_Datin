@@ -32,3 +32,4 @@ services:
       WORDPRESS_DB_USER: monuser
       WORDPRESS_DB_PASSWORD: monpass
       WORDPRESS_DB_NAME: db
+
