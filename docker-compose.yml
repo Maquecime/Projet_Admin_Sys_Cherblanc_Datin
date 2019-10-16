@@ -45,10 +45,20 @@ services:
        - siteb
        - wordpress
        - phpmyadmin
+       - sitec
   sitea:
      build: siteA/
   siteb:
      build: siteB/
-
+  sitec1:
+     build: siteC1/
+  sitec2:
+     build: siteC2/
+  sitec:
+     build: load-balancer/
+     links :
+       - sitec1
+       - sitec2
+           
 networks:
      wpdbnet:
