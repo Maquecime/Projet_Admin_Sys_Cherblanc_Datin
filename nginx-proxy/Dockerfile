@@ -1,3 +1,5 @@
 FROM nginx
 EXPOSE 80 443
-CMD ["nginx","-g","daemon off;"]
+COPY ./conf.d/*.conf /etc/nginx/conf.d/
+
+
